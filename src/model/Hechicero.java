@@ -12,6 +12,11 @@ public class Hechicero extends PersonajeMagico {
         this.invocacion = invocacion;
     }
 
+    @Override
+    public void atacar(Personaje objetivo) {
+        int daño = oscuridad * 3;
+        objetivo.setSalud(objetivo.getSalud() - daño);
+        System.out.println(nombre + " invoca sombras contra " + objetivo.getNombre() + " causando " + daño);
+    }
 }
-
 
