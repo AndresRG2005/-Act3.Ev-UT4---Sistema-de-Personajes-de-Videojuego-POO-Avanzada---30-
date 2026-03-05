@@ -21,4 +21,10 @@ public class Guerrero extends PersonajeFisico implements Defendible {
         System.out.println(nombre + " ataca con espada a " + objetivo.getNombre() + " causando " + daño);
     }
 
+        @Override
+    public void defender() {
+        System.out.println(nombre + " levanta su escudo y reduce daño.");
+    }
+
+
 }
