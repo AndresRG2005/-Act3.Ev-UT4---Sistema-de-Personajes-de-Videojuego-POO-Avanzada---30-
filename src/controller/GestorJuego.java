@@ -15,4 +15,18 @@ public class GestorJuego {
     public void listarPersonajes() {
         personajes.forEach(System.out::println);
     }
+
+    public void simularTurno() {
+        for (Personaje p : personajes) {
+            for (Personaje objetivo : personajes) {
+                if (!p.equals(objetivo)) {
+                    p.atacar(objetivo);
+
+                    if (p instanceof Curable) {
+                        ((Curable) p).curar(objetivo);
+                    }
+                }
+            }
+        }
+    }
 }
