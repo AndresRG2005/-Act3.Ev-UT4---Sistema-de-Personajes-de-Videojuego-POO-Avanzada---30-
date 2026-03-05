@@ -8,4 +8,11 @@ public class GestorJuego {
 
     private ArrayList<Personaje> personajes = new ArrayList<>();
 
+    public void agregarPersonaje(Personaje p) {
+        personajes.add(p);
+    }
+
+    public void listarPersonajes() {
+        personajes.forEach(System.out::println);
+    }
 }
