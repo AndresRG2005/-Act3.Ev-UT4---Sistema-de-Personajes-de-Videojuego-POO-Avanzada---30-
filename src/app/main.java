@@ -1,4 +1,7 @@
 package app;
+import controller.GestorJuego;
+import model.*;
+
 
 
 public class main {
