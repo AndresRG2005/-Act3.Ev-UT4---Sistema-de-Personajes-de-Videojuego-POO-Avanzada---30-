@@ -7,4 +7,9 @@ public abstract class PersonajeMagico extends Personaje {
         super(nombre, nivel, salud);
         this.mana = mana;
     }
+
+    public void regenerarMana() {
+        mana += 10;
+        System.out.println(nombre + " regenera mana");
+    }
 }
