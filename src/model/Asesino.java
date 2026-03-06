@@ -9,4 +9,11 @@ public class Asesino extends PersonajeFisico {
         this.sigilo = sigilo;
         this.critico = critico;
     }
+
+    @Override
+    public void atacar(Personaje objetivo) {
+        int daño = critico * 3;
+        objetivo.setSalud(objetivo.getSalud() - daño);
+        System.out.println(nombre + " realiza un ataque critico a " + objetivo.getNombre() + " causando " + daño);
+    }
 }
