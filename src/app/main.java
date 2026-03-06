@@ -16,11 +16,9 @@ public class main {
         juego.agregarPersonaje(m);
         juego.agregarPersonaje(c);
 
-        guego.listarPersonajes();
+        juego.listarPersonajes();
 
-
-
-
+        juego.simularTurno();
         
     }
 }
