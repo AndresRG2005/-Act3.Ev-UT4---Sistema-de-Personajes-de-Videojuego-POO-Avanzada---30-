@@ -10,10 +10,15 @@ public class main {
         Personaje a = new Arquero("Aithamy", 4, 90, 15, 18);
         Personaje m = new Mago("Daniel", 6, 80, 50, 25, 10);
         Personaje c = new Clerigo("Claudia", 5, 85, 50, 12, 20);
-        
 
+        juego.agregarPersonaje(g);
+        juego.agregarPersonaje(a);
+        juego.agregarPersonaje(m);
+        juego.agregarPersonaje(c);
 
+        juego.listarPersonajes();
 
+        juego.simularTurno();
         
     }
 }
