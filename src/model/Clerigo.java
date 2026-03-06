@@ -11,4 +11,17 @@ public class Clerigo extends PersonajeMagico implements Curable {
         this.fe = fe;
         this.proteccion = proteccion;
     }
+
+    @Override
+    public void atacar(Personaje objetivo) {
+        int daño = fe;
+        objetivo.setSalud(objetivo.getSalud() - daño);
+        System.out.println(nombre + "golpea con luz divina a " + objetivo.getNombre() + " causando " + daño);
+    }
+
+    @Override
+    public void curar(Personaje objetivo) {
+        objetivo.setSalud(objetivo.getSalud() + proteccion);
+        System.out.println(nombre + "cura con energía sagrada a " + objetivo.getNombre());
+    }
 }
